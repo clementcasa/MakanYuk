@@ -111,37 +111,7 @@
                     <view key="view" contentMode="scaleToFill" id="YYw-jE-dnN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4aj-PK-dpC" customClass="IngredientsView" customModule="MakanYuk" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="88" width="414" height="200"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="KXg-r8-P28"/>
-                                </constraints>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ht0-Db-rdp">
-                                <rect key="frame" x="150.5" y="312" width="113" height="30"/>
-                                <state key="normal" title="Print ingredients"/>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ehg-a3-Ofl" customClass="DatePicker" customModule="MakanYuk" customModuleProvider="target">
-                                <rect key="frame" x="107" y="358" width="200" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="GLg-ia-kz6"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="ehg-a3-Ofl" firstAttribute="centerX" secondItem="YYw-jE-dnN" secondAttribute="centerX" id="KJ7-cN-BWB"/>
-                            <constraint firstItem="Vza-Ok-WoI" firstAttribute="trailing" secondItem="4aj-PK-dpC" secondAttribute="trailing" id="aRo-RJ-bYf"/>
-                            <constraint firstItem="4aj-PK-dpC" firstAttribute="leading" secondItem="Vza-Ok-WoI" secondAttribute="leading" id="lhL-uY-We1"/>
-                            <constraint firstItem="Ht0-Db-rdp" firstAttribute="centerX" secondItem="YYw-jE-dnN" secondAttribute="centerX" id="pxj-OH-BhK"/>
-                            <constraint firstItem="Ht0-Db-rdp" firstAttribute="top" secondItem="4aj-PK-dpC" secondAttribute="bottom" constant="24" id="sOY-gX-ZbL"/>
-                            <constraint firstItem="ehg-a3-Ofl" firstAttribute="top" secondItem="Ht0-Db-rdp" secondAttribute="bottom" constant="16" id="v3D-C8-Gdz"/>
-                            <constraint firstItem="4aj-PK-dpC" firstAttribute="top" secondItem="Vza-Ok-WoI" secondAttribute="top" id="we4-Sm-gol"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Vza-Ok-WoI"/>
                     </view>
                     <navigationItem key="navigationItem" title="MakanYuk" id="12N-Si-L1C"/>
@@ -189,7 +159,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="CGw-jw-al6" kind="relationship" relationship="rootViewController" id="ow3-E0-vKB"/>
+                        <segue destination="J97-Ye-Cci" kind="relationship" relationship="rootViewController" id="JeE-Qt-Pbi"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CAR-Uv-xtp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -205,7 +175,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Cux-3g-OGT">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MealTableViewCell" rowHeight="80" id="Xp0-o4-u1l" customClass="MealTableViewCell" customModule="MakanYuk" customModuleProvider="target">

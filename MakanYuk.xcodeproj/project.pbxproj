@@ -17,6 +17,7 @@
 		EB917BB424782DB500399B1C /* IngredientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB917BB324782DB500399B1C /* IngredientsView.swift */; };
 		EB917BB624782DCB00399B1C /* IngredientsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB917BB524782DCB00399B1C /* IngredientsView.xib */; };
 		EB917BBA24782E4100399B1C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB917BB924782E4100399B1C /* UIViewExtension.swift */; };
+		EBB3A04524796CB100959B07 /* MealTypePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3A04424796CB100959B07 /* MealTypePicker.swift */; };
 		EBBFD4AD24630F55009B02C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBFD4AC24630F55009B02C5 /* AppDelegate.swift */; };
 		EBBFD4B124630F55009B02C5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBFD4B024630F55009B02C5 /* LoginViewController.swift */; };
 		EBBFD4B424630F55009B02C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBBFD4B224630F55009B02C5 /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 		EB917BB324782DB500399B1C /* IngredientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsView.swift; sourceTree = "<group>"; };
 		EB917BB524782DCB00399B1C /* IngredientsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IngredientsView.xib; sourceTree = "<group>"; };
 		EB917BB924782E4100399B1C /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		EBB3A04424796CB100959B07 /* MealTypePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTypePicker.swift; sourceTree = "<group>"; };
 		EBBFD4A924630F55009B02C5 /* MakanYuk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakanYuk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBBFD4AC24630F55009B02C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBBFD4B024630F55009B02C5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -125,7 +127,7 @@
 		EB917BB224782C1A00399B1C /* views */ = {
 			isa = PBXGroup;
 			children = (
-				EBD681032478753D00CDE7CB /* datePicker */,
+				EBD681032478753D00CDE7CB /* pickers */,
 				EB917BB724782E1600399B1C /* extensions */,
 				EB917BB824782E2300399B1C /* ingredientsView */,
 			);
@@ -180,12 +182,13 @@
 			path = MakanYuk;
 			sourceTree = "<group>";
 		};
-		EBD681032478753D00CDE7CB /* datePicker */ = {
+		EBD681032478753D00CDE7CB /* pickers */ = {
 			isa = PBXGroup;
 			children = (
 				EBD68104247875A200CDE7CB /* DatePicker.swift */,
+				EBB3A04424796CB100959B07 /* MealTypePicker.swift */,
 			);
-			path = datePicker;
+			path = pickers;
 			sourceTree = "<group>";
 		};
 		EBFF66F6247023B5000C08CD /* extensions */ = {
@@ -365,6 +368,7 @@
 				EB1D7B52246F5BD7002A5834 /* FirestoreRepository.swift in Sources */,
 				EBFF670524704922000C08CD /* MealTypeResponse.swift in Sources */,
 				EBBFD4AD24630F55009B02C5 /* AppDelegate.swift in Sources */,
+				EBB3A04524796CB100959B07 /* MealTypePicker.swift in Sources */,
 				EB917BB424782DB500399B1C /* IngredientsView.swift in Sources */,
 				EB917BBA24782E4100399B1C /* UIViewExtension.swift in Sources */,
 				EBD68100247836D900CDE7CB /* IngredientView.swift in Sources */,

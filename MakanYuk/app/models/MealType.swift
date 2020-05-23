@@ -8,10 +8,10 @@
 
 import Foundation
 
-enum MealType: String {
-    case lunch = "lunch"
-    case dinner = "dinner"
-    case grignottage = "grignottage"
+enum MealType: String, CaseIterable {
+    case lunch = "Lunch"
+    case dinner = "Dinner"
+    case grignottage = "Grignottage"
 }
 
 extension MealType {
