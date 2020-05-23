@@ -11,22 +11,26 @@ import Foundation
 struct IngredientResponse {
     let name: String
     var quantity: String
+    var isChecked: Bool
     
     var data: [String: Any] {
         [
             "name": self.name,
-            "quantity": self.quantity
+            "quantity": self.quantity,
+            "isChecked": self.isChecked
         ]
     }
     
-    init(name: String, quantity: String) {
+    init(name: String, quantity: String, isChecked: Bool = false) {
         self.name = name
         self.quantity = quantity
+        self.isChecked = isChecked
     }
     
     init(data: [String: Any]) {
         self.name = data["name"] as? String ?? ""
         self.quantity = data["quantity"] as? String ?? ""
+        self.isChecked = data["isChecked"] as? Bool ?? false
     }
     
     mutating func incrementQuantity(quantity: String) {
@@ -36,6 +40,6 @@ struct IngredientResponse {
 
 extension IngredientResponse {
     func toModel() -> Ingredient {
-        Ingredient(name: name, quantity: quantity)
+        Ingredient(name: name, quantity: quantity, isChecked: isChecked)
     }
 }

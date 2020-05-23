@@ -14,6 +14,22 @@ struct Meal {
     var date: Date
     var ingredients: [Ingredient]
     var type: MealType
+    
+    init(name: String, date: Date, ingredients: [Ingredient], type: MealType) {
+        self.documentId = nil
+        self.name = name
+        self.date = date
+        self.ingredients = ingredients
+        self.type = type
+    }
+    
+    init(documentId: String?, name: String, date: Date, ingredients: [Ingredient], type: MealType) {
+        self.documentId = documentId
+        self.name = name
+        self.date = date
+        self.ingredients = ingredients
+        self.type = type
+    }
 }
 
 extension Meal {

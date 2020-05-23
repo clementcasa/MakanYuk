@@ -268,6 +268,7 @@ PODS:
   - gRPC-Core/Interface (1.21.0)
   - GTMSessionFetcher/Core (1.4.0)
   - IQKeyboardManagerSwift (6.5.4)
+  - JTAppleCalendar (8.0.3)
   - leveldb-library (1.22)
   - nanopb (0.3.9011):
     - nanopb/decode (= 0.3.9011)
@@ -281,6 +282,7 @@ DEPENDENCIES:
   - Firebase/Firestore (= 6.14.0)
   - FirebaseFirestoreSwift
   - IQKeyboardManagerSwift (= 6.5.4)
+  - JTAppleCalendar
 
 SPEC REPOS:
   trunk:
@@ -304,6 +306,7 @@ SPEC REPOS:
     - gRPC-Core
     - GTMSessionFetcher
     - IQKeyboardManagerSwift
+    - JTAppleCalendar
     - leveldb-library
     - nanopb
 
@@ -328,9 +331,10 @@ SPEC CHECKSUMS:
   gRPC-Core: c9aef9a261a1247e881b18059b84d597293c9947
   GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
   IQKeyboardManagerSwift: 2dde0fc70110e8eac7ccce2a46fdbec6a850b414
+  JTAppleCalendar: 932cadea40b1051beab10f67843451d48ba16c99
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
 
-PODFILE CHECKSUM: 847cf74755bd7279c8a0d8cdddae20a7d0f94a55
+PODFILE CHECKSUM: 188bf02eda270eb59b1162dfc57ecc689652df0a
 
 COCOAPODS: 1.8.4

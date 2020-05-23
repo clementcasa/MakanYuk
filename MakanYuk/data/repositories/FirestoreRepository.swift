@@ -26,6 +26,16 @@ class FirestoreRepository {
             }
         }
     }
+ 
+    func getAllMealsAtDates(_ dates: [Date], success: @escaping ([Meal]) -> Void, failure: @escaping (Error) -> Void) {
+        database.collection("meals").whereField("date", in: dates.map { $0.toStringFormatted() }).getDocuments() { (snapshot, error) in
+            if let error = error {
+                failure(error)
+            } else if let snapshot = snapshot {
+                success(snapshot.documents.map { MealResponse(documentId: $0.documentID, data: $0.data()).toModel() })
+            }
+        }
+    }
     
     func getIngredientsForDates(_ dates: [Date], success: @escaping ([Ingredient]) -> Void, failure: @escaping (Error) -> Void) {
         database.collection("meals").whereField("date", in: dates.map { $0.toStringFormatted() }).getDocuments { (snapshot, error) in

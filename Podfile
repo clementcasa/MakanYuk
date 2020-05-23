@@ -11,5 +11,6 @@ target 'MakanYuk' do
   pod 'Firebase/Firestore', '= 6.14.0'
   pod 'FirebaseFirestoreSwift'
   pod 'IQKeyboardManagerSwift', '= 6.5.4'
+  pod 'JTAppleCalendar', '= 8.0.3'
 
 end
