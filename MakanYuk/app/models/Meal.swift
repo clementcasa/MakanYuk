@@ -12,23 +12,27 @@ struct Meal {
     let documentId: String?
     var name: String
     var date: Date
-    var ingredients: [Ingredient]
+    var plate: Plate
     var type: MealType
     
-    init(name: String, date: Date, ingredients: [Ingredient], type: MealType) {
+    init(name: String, date: Date, plate: Plate, type: MealType) {
         self.documentId = nil
         self.name = name
         self.date = date
-        self.ingredients = ingredients
+        self.plate = plate
         self.type = type
     }
     
-    init(documentId: String?, name: String, date: Date, ingredients: [Ingredient], type: MealType) {
+    init(documentId: String?, name: String, date: Date, plate: Plate, type: MealType) {
         self.documentId = documentId
         self.name = name
         self.date = date
-        self.ingredients = ingredients
+        self.plate = plate
         self.type = type
+    }
+    
+    func getIngredients() -> [Ingredient] {
+        plate.ingredients
     }
 }
 
@@ -38,7 +42,7 @@ extension Meal {
             documentId: documentId,
             name: name,
             date: date.toStringFormatted(),
-            ingredients: ingredients.map { $0.toResponse() },
+            plate: plate.toResponse(),
             type: type.toResponse()
         )
     }

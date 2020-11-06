@@ -24,7 +24,7 @@ class MealViewController: UIViewController {
             nameTextField.text = meal.name
             dateTextField.setSelectedDate(date: meal.date)
             mealTypeTextField.setMealType(mealType: meal.type)
-            ingredientsView.setupWithData(ingredients: meal.ingredients)
+            //ingredientsView.setupWithData(ingredients: meal.ingredients)
         }
     }
     
@@ -39,10 +39,10 @@ class MealViewController: UIViewController {
             newMeal = meal
             newMeal?.name = name
             newMeal?.date = date
-            newMeal?.ingredients = ingredients
+            //newMeal?.ingredients = ingredients
             newMeal?.type = mealType
         } else {
-            newMeal = Meal(name: name, date: date, ingredients: ingredients, type: mealType)
+            //newMeal = Meal(name: name, date: date, ingredients: ingredients, type: mealType)
         }
         
         let repository = FirestoreRepository()

@@ -45,6 +45,7 @@ class FirestoreRepository {
                 var listIngredients: [IngredientResponse] = []
                 snapshot.documents.forEach { document in
                     let meal = MealResponse(data: document.data())
+                    /*
                     meal.ingredients.forEach { ingredient in
                         if let index = listIngredients.lastIndex(where: { $0.name == ingredient.name }) {
                             listIngredients[index].incrementQuantity(quantity: ingredient.quantity)
@@ -52,6 +53,7 @@ class FirestoreRepository {
                             listIngredients.append(ingredient)
                         }
                     }
+ */
                 }
                 success(listIngredients.map { $0.toModel() })
             }

@@ -275,6 +275,9 @@ PODS:
     - nanopb/encode (= 0.3.9011)
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
+  - R.swift (5.2.2):
+    - R.swift.Library (~> 5.2.0)
+  - R.swift.Library (5.2.0)
 
 DEPENDENCIES:
   - Firebase/Auth (= 6.14.0)
@@ -282,7 +285,8 @@ DEPENDENCIES:
   - Firebase/Firestore (= 6.14.0)
   - FirebaseFirestoreSwift
   - IQKeyboardManagerSwift (= 6.5.4)
-  - JTAppleCalendar
+  - JTAppleCalendar (= 8.0.3)
+  - R.swift (= 5.2.2)
 
 SPEC REPOS:
   trunk:
@@ -309,6 +313,8 @@ SPEC REPOS:
     - JTAppleCalendar
     - leveldb-library
     - nanopb
+    - R.swift
+    - R.swift.Library
 
 SPEC CHECKSUMS:
   abseil: 18063d773f5366ff8736a050fe035a28f635fd27
@@ -334,7 +340,9 @@ SPEC CHECKSUMS:
   JTAppleCalendar: 932cadea40b1051beab10f67843451d48ba16c99
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  R.swift: 7c52cdc57a66840ffe6cbd8a823d732059d42a32
+  R.swift.Library: 5ba4f1631300caf9a4d890186930da85d540769d
 
-PODFILE CHECKSUM: 188bf02eda270eb59b1162dfc57ecc689652df0a
+PODFILE CHECKSUM: e0c24579cf487295116974ded05bc73b211feb41
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.10.0

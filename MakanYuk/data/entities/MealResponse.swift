@@ -12,23 +12,23 @@ struct MealResponse {
     let documentId: String?
     let name: String
     let date: String
-    let ingredients: [IngredientResponse]
+    let plate: PlateResponse
     let type: MealTypeResponse
     
     var data: [String: Any] {
         [
             "name": self.name,
             "date": self.date,
-            "ingredients": self.ingredients.map { $0.data },
+            "plate": self.plate.data,
             "mealType": self.type.rawValue
         ]
     }
     
-    init(documentId: String? = nil, name: String, date: String, ingredients: [IngredientResponse], type: MealTypeResponse) {
+    init(documentId: String? = nil, name: String, date: String, plate: PlateResponse, type: MealTypeResponse) {
         self.documentId = documentId
         self.name = name
         self.date = date
-        self.ingredients = ingredients
+        self.plate = plate
         self.type = type
     }
     
@@ -36,13 +36,13 @@ struct MealResponse {
         self.documentId = documentId
         self.name = data["name"] as? String ?? ""
         self.date = data["date"] as? String ?? ""
-        self.ingredients = (data["ingredients"] as? [[String: Any]])?.map { IngredientResponse(data: $0) } ?? []
+        self.plate = PlateResponse(data: data["plate"] as? [String: Any] ?? [:])
         self.type = MealTypeResponse(rawValue: data["mealType"] as? String ?? "") ?? MealTypeResponse.grignottage
     }
 }
 
 extension MealResponse {
     func toModel() -> Meal {
-        Meal(documentId: documentId, name: name, date: date.toDate(), ingredients: ingredients.map { $0.toModel() }, type: type.toModel())
+        Meal(documentId: documentId, name: name, date: date.toDate(), plate: plate.toModel(), type: type.toModel())
     }
 }

@@ -25,7 +25,7 @@ class ListOfIngredientsViewController : UIViewController {
         
         if let meals = meals {
             for meal in meals {
-                ingredients.append(contentsOf: meal.ingredients)
+                //ingredients.append(contentsOf: meal.ingredients)
             }
         }
     }

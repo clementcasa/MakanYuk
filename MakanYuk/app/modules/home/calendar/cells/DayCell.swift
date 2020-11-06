@@ -26,24 +26,26 @@ class DayCell: JTACDayCell {
         self.date = date
     }
     
-    func updateCellSelectionState(cellState: CellState, hasMeal: Bool) {
+    func updateCellSelectionState(cellState: CellState, hasMeal: Bool?) {
+        if cellState.isSelected {
+            selectedView.isHidden = false
+        } else {
+            selectedView.isHidden = true
+        }
+        if hasMeal == true {
+            hasMealView.isHidden = false
+        } else {
+            hasMealView.isHidden = true
+        }
         switch cellState.dateBelongsTo {
             case .thisMonth:
                 dayLabel.isHidden = false
                 isUserInteractionEnabled = true
             default:
                 dayLabel.isHidden = true
+                selectedView.isHidden = true
+                hasMealView.isHidden = true
                 isUserInteractionEnabled = false
-        }
-        if cellState.isSelected {
-            selectedView.isHidden = false
-        } else {
-            selectedView.isHidden = true
-        }
-        if hasMeal {
-            hasMealView.isHidden = false
-        } else {
-            hasMealView.isHidden = true
         }
     }
 }
