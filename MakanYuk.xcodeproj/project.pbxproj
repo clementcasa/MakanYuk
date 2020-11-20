@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		73B69DFDFF78EDD8BF713D78 /* Pods_MakanYuk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DDF3EB067C22F6595BFB3F /* Pods_MakanYuk.framework */; };
-		EB1D7B4E2465BF4D002A5834 /* WorkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1D7B4D2465BF4D002A5834 /* WorkingViewController.swift */; };
 		EB1D7B50246F5A9B002A5834 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB1D7B4F246F5A9B002A5834 /* GoogleService-Info.plist */; };
 		EB1D7B52246F5BD7002A5834 /* FirestoreRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1D7B51246F5BD7002A5834 /* FirestoreRepository.swift */; };
 		EB1D7B57246F615F002A5834 /* MealResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1D7B56246F615F002A5834 /* MealResponse.swift */; };
@@ -56,7 +55,6 @@
 		4C4A8E81CC53A2C20C5F88D8 /* Pods-MakanYuk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakanYuk.debug.xcconfig"; path = "Target Support Files/Pods-MakanYuk/Pods-MakanYuk.debug.xcconfig"; sourceTree = "<group>"; };
 		60DDF3EB067C22F6595BFB3F /* Pods_MakanYuk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MakanYuk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71480BD3E9FEE031FFC22332 /* Pods-MakanYuk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakanYuk.release.xcconfig"; path = "Target Support Files/Pods-MakanYuk/Pods-MakanYuk.release.xcconfig"; sourceTree = "<group>"; };
-		EB1D7B4D2465BF4D002A5834 /* WorkingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkingViewController.swift; sourceTree = "<group>"; };
 		EB1D7B4F246F5A9B002A5834 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EB1D7B51246F5BD7002A5834 /* FirestoreRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreRepository.swift; sourceTree = "<group>"; };
 		EB1D7B56246F615F002A5834 /* MealResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealResponse.swift; sourceTree = "<group>"; };
@@ -389,7 +387,6 @@
 				EBB3A0482479BC8C00959B07 /* meal */,
 				EBEE6DAA24814D4E002416B8 /* ingredients */,
 				EBBFD4AC24630F55009B02C5 /* AppDelegate.swift */,
-				EB1D7B4D2465BF4D002A5834 /* WorkingViewController.swift */,
 			);
 			path = modules;
 			sourceTree = "<group>";
@@ -577,7 +574,6 @@
 				EBDF91C225555EF300076B07 /* CalendarDataSourceDelegate.swift in Sources */,
 				EB899879255558FF00645EE2 /* MealsListDataSource.swift in Sources */,
 				EBDF91ED2555825E00076B07 /* MonthHeaderView.swift in Sources */,
-				EB1D7B4E2465BF4D002A5834 /* WorkingViewController.swift in Sources */,
 				EB877C52247093C2002C7AF4 /* MealTableViewCell.swift in Sources */,
 				EBEE6DAC24814D9E002416B8 /* ListOfIngredientsViewController.swift in Sources */,
 				EBD68105247875A200CDE7CB /* DatePicker.swift in Sources */,

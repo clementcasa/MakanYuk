@@ -104,14 +104,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2777" y="1781"/>
+            <point key="canvasLocation" x="-1655" y="-618"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zgO-b1-pzL">
             <objects>
                 <navigationController id="kLi-nc-Oko" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xxg-xM-Rny">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -120,23 +120,23 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ogs-Yw-NsJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1142" y="1031"/>
+            <point key="canvasLocation" x="1199" y="127"/>
         </scene>
         <!--New Meal-->
         <scene sceneID="3Vc-Fj-ucZ">
             <objects>
                 <viewController storyboardIdentifier="MealViewController" id="CGw-jw-al6" customClass="MealViewController" customModule="MakanYuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YYw-jE-dnN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of the meal" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uFC-wI-Sel">
-                                <rect key="frame" x="24" y="88" width="366" height="34"/>
+                                <rect key="frame" x="24" y="120" width="366" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Es0-kW-nHg" customClass="DatePicker" customModule="MakanYuk" customModuleProvider="target">
-                                <rect key="frame" x="24" y="138" width="150" height="34"/>
+                                <rect key="frame" x="24" y="170" width="150" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="Hzo-AO-ijx"/>
                                 </constraints>
@@ -144,16 +144,16 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type of Meal" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mo8-Fl-FWG" customClass="MealTypePicker" customModule="MakanYuk" customModuleProvider="target">
-                                <rect key="frame" x="190" y="138" width="200" height="34"/>
+                                <rect key="frame" x="190" y="170" width="200" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c8Y-02-Kd0" customClass="IngredientsView" customModule="MakanYuk" customModuleProvider="target">
-                                <rect key="frame" x="24" y="196" width="366" height="519"/>
+                                <rect key="frame" x="24" y="228" width="366" height="541"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pU6-J3-5La">
-                                <rect key="frame" x="24" y="739" width="366" height="45"/>
+                                <rect key="frame" x="24" y="793" width="366" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="gtk-rc-hZJ"/>
                                 </constraints>
@@ -189,39 +189,11 @@
                         <outlet property="ingredientsView" destination="c8Y-02-Kd0" id="E2L-gF-LhZ"/>
                         <outlet property="mealTypeTextField" destination="Mo8-Fl-FWG" id="WhJ-kj-wDz"/>
                         <outlet property="nameTextField" destination="uFC-wI-Sel" id="q9I-h1-gqn"/>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="LoginViewController" modalPresentationStyle="fullScreen" id="D7P-64-DTq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wli-eS-gD5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1913" y="1031"/>
-        </scene>
-        <!--Working View Controller-->
-        <scene sceneID="fAl-b5-9qH">
-            <objects>
-                <viewController storyboardIdentifier="WorkingViewController" id="VHi-jt-ntO" customClass="WorkingViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="A9C-8a-VOx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Working" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPY-Ie-BFu">
-                                <rect key="frame" x="175.5" y="437.5" width="63" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="eku-N4-ZoC"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="fPY-Ie-BFu" firstAttribute="centerY" secondItem="A9C-8a-VOx" secondAttribute="centerY" id="ZeU-wG-518"/>
-                            <constraint firstItem="fPY-Ie-BFu" firstAttribute="centerX" secondItem="A9C-8a-VOx" secondAttribute="centerX" id="qaS-aZ-F9L"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="alh-hO-Mnx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2777" y="1031"/>
+            <point key="canvasLocation" x="1970" y="127"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6Vw-Cl-Ify">
@@ -501,7 +473,6 @@
                         <outlet property="listSegmentedControl" destination="cgI-00-v9E" id="UpR-OZ-Gm8"/>
                         <outlet property="pageViewContainer" destination="Maa-rq-eyC" id="5Fo-3S-oDh"/>
                         <outlet property="selectedMonth" destination="8dm-pb-yGH" id="jQW-wx-TC2"/>
-                        <segue destination="kLi-nc-Oko" kind="presentation" identifier="MealViewController" id="0dI-OJ-evw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qVU-Pk-lyx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -710,7 +681,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2O7-MV-hHv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1053.6231884057972" y="126.5625"/>
+            <point key="canvasLocation" x="200" y="892"/>
         </scene>
         <!--List Of Ingredients View Controller-->
         <scene sceneID="2O2-49-wpg">
@@ -721,7 +692,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3yT-de-XI5">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="IngredientsTableViewCell" id="fhQ-Wy-ZV6" customClass="IngredientsTableViewCell" customModule="MakanYuk" customModuleProvider="target">
@@ -768,13 +739,30 @@
                             <constraint firstItem="3yT-de-XI5" firstAttribute="top" secondItem="FSt-bj-yOV" secondAttribute="top" id="gsY-wq-oUf"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="7fh-kJ-lyz"/>
                     <connections>
                         <outlet property="tableView" destination="3yT-de-XI5" id="UiV-Vm-7ni"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iCJ-w7-cRH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="68" y="1809"/>
+            <point key="canvasLocation" x="1970" y="892"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dUg-hh-3Vc">
+            <objects>
+                <navigationController id="aO4-00-R2F" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6cp-rY-Yzx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jnJ-XW-DyP" kind="relationship" relationship="rootViewController" id="2cA-m5-uAI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RYG-Bw-9re" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1199" y="892"/>
         </scene>
     </scenes>
     <designables>

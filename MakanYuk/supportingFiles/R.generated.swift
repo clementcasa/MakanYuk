@@ -89,47 +89,6 @@ struct R: Rswift.Validatable {
   }
 
   #if os(iOS) || os(tvOS)
-  /// This `R.segue` struct is generated, and contains static references to 2 view controllers.
-  struct segue {
-    /// This struct is generated for `HomeViewController`, and contains static references to 1 segues.
-    struct homeViewController {
-      /// Segue identifier `MealViewController`.
-      static let mealViewController: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, HomeViewController, UIKit.UINavigationController> = Rswift.StoryboardSegueIdentifier(identifier: "MealViewController")
-
-      #if os(iOS) || os(tvOS)
-      /// Optionally returns a typed version of segue `MealViewController`.
-      /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
-      /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
-      static func mealViewController(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, HomeViewController, UIKit.UINavigationController>? {
-        return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.homeViewController.mealViewController, segue: segue)
-      }
-      #endif
-
-      fileprivate init() {}
-    }
-
-    /// This struct is generated for `MealViewController`, and contains static references to 1 segues.
-    struct mealViewController {
-      /// Segue identifier `LoginViewController`.
-      static let loginViewController: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, MealViewController, LoginViewController> = Rswift.StoryboardSegueIdentifier(identifier: "LoginViewController")
-
-      #if os(iOS) || os(tvOS)
-      /// Optionally returns a typed version of segue `LoginViewController`.
-      /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
-      /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
-      static func loginViewController(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, MealViewController, LoginViewController>? {
-        return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.mealViewController.loginViewController, segue: segue)
-      }
-      #endif
-
-      fileprivate init() {}
-    }
-
-    fileprivate init() {}
-  }
-  #endif
-
-  #if os(iOS) || os(tvOS)
   /// This `R.storyboard` struct is generated, and contains static references to 2 storyboards.
   struct storyboard {
     /// Storyboard `LaunchScreen`.
@@ -377,7 +336,6 @@ struct _R: Rswift.Validatable {
       let mealViewController = StoryboardViewControllerResource<MealViewController>(identifier: "MealViewController")
       let mealsListViewController = StoryboardViewControllerResource<MealsListViewController>(identifier: "MealsListViewController")
       let name = "Main"
-      let workingViewController = StoryboardViewControllerResource<WorkingViewController>(identifier: "WorkingViewController")
 
       func groceriesListViewController(_: Void = ()) -> GroceriesListViewController? {
         return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: groceriesListViewController)
@@ -407,10 +365,6 @@ struct _R: Rswift.Validatable {
         return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: mealsListViewController)
       }
 
-      func workingViewController(_: Void = ()) -> WorkingViewController? {
-        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: workingViewController)
-      }
-
       static func validate() throws {
         if UIKit.UIImage(named: "arrow.down.app.fill", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'arrow.down.app.fill' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "arrow.right", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'arrow.right' is used in storyboard 'Main', but couldn't be loaded.") }
@@ -425,7 +379,6 @@ struct _R: Rswift.Validatable {
         if _R.storyboard.main().loginViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'loginViewController' could not be loaded from storyboard 'Main' as 'LoginViewController'.") }
         if _R.storyboard.main().mealViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mealViewController' could not be loaded from storyboard 'Main' as 'MealViewController'.") }
         if _R.storyboard.main().mealsListViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mealsListViewController' could not be loaded from storyboard 'Main' as 'MealsListViewController'.") }
-        if _R.storyboard.main().workingViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'workingViewController' could not be loaded from storyboard 'Main' as 'WorkingViewController'.") }
       }
 
       fileprivate init() {}
